@@ -11,7 +11,7 @@
 <body>
   <div ng-app="myApp">
 
-      <div ng-controller="fistCtr">
+      <div ng-controller="fistCtr" ng-click="show()">
           {{greeting.text}}
           {{greeting.a}}
       </div>
@@ -31,6 +31,14 @@
                 text: 'Hello',
                 a:'b'
             };
+            $scope.show=function () {
+                $scope.greeting = {
+                    text: '我被店里',
+                    a:'b点了'
+                };
+              alert('i am  cliced')
+            }
+
             setTimeout(function () {
                $scope.$apply(function () {
                    $scope.greeting = {

@@ -39,11 +39,22 @@
 </div>
 </body>
 <script>
-    var app = angular.module("myApp", []);
+    var app = angular.module("myApp", [],function ($provide) {
+        $provide.provider('providerServer01',function () {
+            this.$get=function () {
+                return {
+                    message:'this is custom provider'
+                }
+            }
+
+        })
+
+    });
     console.log(app)
 
-    app.controller("fistCtr", ['$scope','$filter',
-        function fistCtr($scope,$filter) {
+    app.controller("fistCtr", ['$scope','providerServer01','$filter',
+        function fistCtr($scope,providerServer01,$filter) {
+        console.log(providerServer01)
             $scope.url='angular-1.5.8/a.html';
             $scope.tpl='angular-1.5.8/b.html';
             $scope.json={

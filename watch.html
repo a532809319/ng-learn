@@ -30,22 +30,28 @@
 
     app.controller("fistCtr", ['$scope',
         function fistCtr($scope) {
-            $scope.iphone = {
-                money: 0,
-                nus:0,
-                fre:10
-            };
-        $scope.sun=function () {
-            return    $scope.iphone.money*$scope.iphone.nus
+            var json = {
+                'name': 'hukai',
+                'age': '18',
+
             }
-        $scope.$watch($scope.sun,function (newV,oldV) {
-            console.log(newV)
-            console.log(oldV)
-          $scope.iphone.fre=newV>100?0:10;
-
-        })
-
+//        angular.forEach(json,function (value,key) {
+//            console.log(key+'!!!'+value)
+//        })
+//            $scope.iphone = {
+//                money: 0,
+//                nus:0,
+//                fre:10
+//            };
+            var arr = [];
+            angular.forEach(json, function (value, key) {
+                console.log(key + '!!!' + value)
+                this.push(key + value);
+            }, arr);
+            console.log(arr);
         }
+
+
     ]);
 
     app.controller("lastctr", ['$scope',

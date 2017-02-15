@@ -20,6 +20,9 @@
             <option value="">3</option>
         </select>
         <input type="checkbox" ng-model="sel">
+        <input type="text" ng-model="c" ng-change="change()">
+        {{'change:'+c}}
+
     </div>
 
 
@@ -34,6 +37,9 @@
                 text: 'Hello',
                 a:'b'
             };
+            $scope.change=function () {
+               alert(1) ;
+            }
 
         }
     ]);

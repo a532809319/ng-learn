@@ -38,26 +38,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ng-copy.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng-copy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="34" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="倒计时.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/倒计时.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ng-clas.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ng-clas.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,21 +70,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ng-bind-html.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng-bind-html.html">
+      <file leaf-file-name="ng-include.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-include.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ng-include.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ng-include.html">
+      <file leaf-file-name="ng-include1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-include1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="345">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-1.5.8/b.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -151,6 +151,9 @@
         <option value="$PROJECT_DIR$/ng-bind-html.html" />
         <option value="$PROJECT_DIR$/ng-include.html" />
         <option value="$PROJECT_DIR$/angular-1.5.8/a.html" />
+        <option value="$PROJECT_DIR$/angular-1.5.8/b.html" />
+        <option value="$PROJECT_DIR$/ng-include1.html" />
+        <option value="$PROJECT_DIR$/filter.html" />
       </list>
     </option>
   </component>
@@ -213,8 +216,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/angular-1.5.8" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/angular-1.5.8" />
     </key>
   </component>
   <component name="RunManager">
@@ -290,12 +293,12 @@
       <updated>1487119610574</updated>
       <workItem from="1487119611790" duration="6559000" />
       <workItem from="1487137170214" duration="375000" />
-      <workItem from="1487137602352" duration="14055000" />
+      <workItem from="1487137602352" duration="17415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20989000" />
+    <option name="totallyTimeSpent" value="24349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="78" width="1378" height="714" extended-state="0" />
@@ -543,10 +546,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/angular-1.5.8/b.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ng-include.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="210">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-include1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
           <folding />
         </state>
       </provider>

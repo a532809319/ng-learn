@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="angular-1.5.8/angular-1.3.0.js"></script>
+</head>
+<style>
+    .red{
+        background: red;
+        color:yellow;
+    }
+    .green{
+        background: green;
+    }
+</style>
+<body>
+<div ng-app="myApp">
+
+    <div ng-controller="fistCtr" >
+       <div ng-class="{red:a}" ng-click="cbg()">aaaa</div>
+       <div ng-class="{{sClass}}" ng-click="cbg()">aaaa</div>
+
+    </div>
+
+
+</div>
+</body>
+<script>
+    var app = angular.module("myApp", []);
+
+    app.controller("fistCtr", ['$scope',
+        function fistCtr($scope) {
+            $scope.greeting = {
+                text: 'Hello',
+                a:'b'
+            };
+            $scope.change=function () {
+                alert(1) ;
+            }
+            $scope.copy=function () {
+                alert('复制来')
+            }
+            $scope.a=true;
+         $scope.sClass='{green:true}'
+
+            $scope.cbg=function () {
+               $scope.a==!($scope.a);
+               console.log( $scope.a);
+            }
+
+        }
+    ]);
+
+
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="angular-1.5.8/angular.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>-->
+    <script src="angular-1.5.8/angular-route.js"></script>
+    <script src="angular-1.5.8/angular-animate.js"></script>
+    <script src="angular-1.5.8/angular-resource.js"></script>
+
+
+
+</head>
+<style>
+    .red{
+       transition: 2s all;
+        position: absolute;
+    }
+    .green{
+        background: green;
+    }
+    .red.ng-enter{
+        opacity: 0;
+    }
+    .red.ng-enter-active{
+        opacity: 1;
+    }
+    .red.ng-leave{
+        opacity: 1;
+    }
+    .red.ng-leave-active{
+        opacity: 0;
+    }
+</style>
+<body>
+<div ng-app="myApp">
+  <div class="header">
+      <a href="#/content/zhangsan">张三</a>
+      <a href="#/content/lisi">李四</a>
+
+  </div>
+   <div class="red" style="margin: 50px" ng-view>
+
+
+
+   </div>
+
+
+</div>
+</body>
+<script>
+    var app = angular.module("myApp", ['ngRoute','ngAnimate','ngResource']);
+    app.run(['$rootScope',function ($rootScope) {
+        $rootScope.$on('$routeChangeStart',function (event,current,pre) {
+//            console.log(event);
+//            console.log(current);
+//            console.log(pre);
+        });
+
+    }]);
+      app.config(['$routeProvider',function ($routeProvider) {
+          $routeProvider
+
+              .when('/content/:name',{
+                  template:'<div>div4 {{ data[0].name }}</div>',
+                  controller:'content'
+              })
+
+                  .otherwise({
+                  redirectTo:'/content/zhangsan'
+              });
+      }]);
+
+
+    app.controller("content", ['$scope','$routeParams','$resource',
+        function fistCtr($scope,$routeParams,$resource){
+     var obj =$resource($routeParams['name']+'.json')
+            //alert('content');
+            console.log($routeParams)
+            if($routeParams){
+         $scope.data=obj.query();
+         console.log($scope.data)
+               // $scope.data=$routeParams.name
+            }
+//            alert($routeParams.id);
+//            alert($routeParams.host);
+$scope.id=$routeParams.id;
+        }
+    ]);
+
+</script>
+
+</html>

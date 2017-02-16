@@ -22,9 +22,9 @@
 </style>
 <body>
 <div ng-app="myApp">
-  <div class="header">
-      <a href="#div1">第一个div</a>
-      <a href="#div2">第2个div</a>
+  <div class="header" ng-controller="jshref">{{text}}
+      <a ng-click="$location.path('div1')" >第一个div</a>
+      <a ng-click="$location.path('div2')">第2个div</a>
       <a href="#div3">第3个div</a>
       <a href="#text">text</a>
       <a href="#content/12">点击去内容content</a>
@@ -78,28 +78,24 @@
     app.controller("fistCtr", ['$scope',
         function fistCtr($scope){
 
-       alert(1)
 
         }
     ]);
     app.controller("secondCtr", ['$scope',
         function fistCtr($scope){
 
-            alert(2)
 
         }
     ]);
     app.controller("threeCtr", ['$scope',
         function fistCtr($scope){
 
-            alert(3)
 
         }
     ]);
     app.controller("text", ['$scope',
         function fistCtr($scope){
 
-            alert('text')
 
         }
     ]);
@@ -111,6 +107,13 @@
             alert($routeParams.id);
             alert($routeParams.host);
 $scope.id=$routeParams.id;
+        }
+    ]);
+    app.controller("jshref", ['$scope','$location',
+        function jshref($scope,$location){
+        $scope.text=5;
+           $scope.$location=$location;
+
         }
     ]);
 

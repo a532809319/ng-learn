@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="angular-1.5.8/angular.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>-->
+    <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <script src="angular-1.5.8/angular-route.js"></script>
+    <script src="angular-1.5.8/angular-animate.js"></script>
+
+</head>
+<style>
+    .red{
+        display: block;
+        background: red;
+        color:yellow;
+        width: 00px;
+        height: 0px;
+       /*// transition:5s all ;*/
+    }
+    /*.red.ng-enter{*/
+        /*opacity: 0;*/
+    /*}*/
+    /*.red.ng-enter-active{*/
+        /*opacity: 1;*/
+    /*}*/
+    /*.red.ng-leave{*/
+        /*opacity: 1;*/
+    /*}*/
+    /*.red.ng-leave-active{*/
+        /*opacity: 0;*/
+    /*}*/
+
+    /*.green{*/
+        /*background: green;*/
+    /*}*/
+
+
+</style>
+<body>
+<div ng-app="myApp">
+    <div ng-controller="fistCtr">
+        <input type="checkbox" ng-model="bBtn">
+        <div   ng-if="bBtn" class="red"></div>
+    </div>
+
+
+</div>
+</body>
+<script>
+
+    var app = angular.module("myApp", ['ngRoute','ngAnimate']);
+
+    app.animation('.red',function () {
+        return{
+            enter:function (element,done) {
+                console.log(element);
+                console.log(done);
+                $(element).animate({width:0,height:0},1000)
+                $(element).animate({width:200,height:200},1000).done
+
+            },
+            leave:function (element,done) {
+                //$(element).animate({width:200,height:200},1000)
+                $(element).animate({width:0,height:0},1000).done;
+
+                // $(element).animate({width:200,height:200},1000)
+
+            }
+
+        }
+    });
+
+    app.controller("fistCtr", ['$scope',
+        function fistCtr($scope){
+            $scope.bBtn=false;
+
+
+        }
+
+    ]);
+
+</script>
+
+</html>

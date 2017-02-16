@@ -15,7 +15,7 @@
 </head>
 <style>
     .red{
-       transition: 2s all;
+        transition: 2s all;
         position: absolute;
     }
     .green{
@@ -36,18 +36,18 @@
 </style>
 <body>
 <div ng-app="myApp">
-  <div class="header">
-      <a href="#div1">第一个div</a>
-      <a href="#div2">第2个div</a>
-      <a href="#div3">第3个div</a>
-      <a href="#text">text</a>
-      <a href="#content/12">点击去内容content</a>
-  </div>
-   <div class="red" style="margin: 50px" ng-view>
+    <div class="header">
+        <a href="#div1">第一个div</a>
+        <a href="#div2">第2个div</a>
+        <a href="#div3">第3个div</a>
+        <a href="#text">text</a>
+        <a href="#content/12">点击去内容content</a>
+    </div>
+    <div class="red" style="margin: 50px" ng-view>
 
 
 
-   </div>
+    </div>
 
 
 </div>
@@ -62,33 +62,33 @@
         });
 
     }]);
-      app.config(['$routeProvider',function ($routeProvider) {
-          $routeProvider
-              .when('/div1',{
-                  template:'<div> 这是div1</div>',
-                  controller:'fistCtr'
-              })
-              .when('/div2',{
-                  template:'<div> 这是div2</div>',
-                  controller:'secondCtr'
-              })
-              .when('/div3',{
-                  template:'<div> 这是div3</div>',
-                  controller:'threeCtr'
-              })
-              .when('/text',{
-                  templateUrl:'./text.html',
-                  controller:'text'
-              })
-              .when('/content/:id',{
-                  template:'<div>div4 content{{id}}</div>',
-                  controller:'content'
-              })
+    app.config(['$routeProvider',function ($routeProvider) {
+        $routeProvider
+            .when('/div1',{
+                template:'<div> 这是div1</div>',
+                controller:'fistCtr'
+            })
+            .when('/div2',{
+                template:'<div> 这是div2</div>',
+                controller:'secondCtr'
+            })
+            .when('/div3',{
+                template:'<div> 这是div3</div>',
+                controller:'threeCtr'
+            })
+            .when('/text',{
+                templateUrl:'./text.html',
+                controller:'text'
+            })
+            .when('/content/:id',{
+                template:'<div>div4 content{{id}}</div>',
+                controller:'content'
+            })
 
-                  .otherwise({
-                  redirectTo:'/div1'
-              });
-      }]);
+            .otherwise({
+                redirectTo:'/div1'
+            });
+    }]);
     app.controller("fistCtr", ['$scope',
         function fistCtr($scope){
 
@@ -120,7 +120,7 @@
             console.log($routeParams)
             alert($routeParams.id);
             alert($routeParams.host);
-$scope.id=$routeParams.id;
+            $scope.id=$routeParams.id;
         }
     ]);
 

@@ -25,7 +25,9 @@
 
     <div ng-controller="fistCtr" >
         <div>{{name}}</div>
-
+        <div class="" id="div1" style="height: 400px;background: red">1</div>
+        <div class="" id="div2" style="height: 400px;background: yellow">2</div>
+        <div class="" id="div3" style="height: 400px;background: black">3</div>
 
     </div>
     <script type="text/ng-template" id="angular-1.5.8/b.html"> <div>dsfads</div>   </script>
@@ -52,10 +54,18 @@
         })
 
 
-    app.controller("fistCtr", ['$scope','providerServer01','$filter',
-        function fistCtr($scope,providerServer01,$filter) {
+    app.controller("fistCtr", ['$scope','providerServer01','$filter','$location','$anchorScroll',
+        function fistCtr($scope,providerServer01,$filter,$location,$anchorScroll) {
             $scope.name='张三';
 
+//        console.log('abs:'+$location.absUrl())
+//        console.log('hash:'+$location.hash('helow'))
+//        console.log('path:'+$location.hash('/new.html'))
+//        console.log('replce:'+$location.hash('/new.html').replace())
+    //    console.log('search:'+$location.search({'age':20}))
+     //   console.log('host:'+$location.host())
+
+      console.log('hash:'+$location.hash('div2'))
 
           var  data=   providerServer01.getData().success(function (data) {
                 console.log(data);

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="angular-1.5.8/angular-1.3.0.js"></script>
+</head>
+<style>
+    .red{
+        background: red;
+        color:yellow;
+    }
+    .green{
+        background: green;
+    }
+    ul{
+
+    }
+    #parent div{
+        width: 300px;
+        height:500px;
+        border: 1px solid black;
+        margin: 20px;
+    }
+    #parent ul{
+        width: 200px;
+        height:500px;
+        border: 1px solid black;
+        margin: 20px;
+        position: fixed;
+        right: 0;
+        top:0;
+    }
+
+</style>
+<body>
+<div id="parent" ng-app="myApp">
+
+    <div ng-controller="fistCtr" >
+        <ul>
+            <li  ng-repeat="id in [1,2,3,4,5]" ng-click="changeDiv('div'+id)" >{{id}}aaaaa}</li>
+        </ul>
+    </div>
+    <div ng-repeat="id in [1,2,3,4,5]" ng-attr-id='div{{id}}'>{{id}}</div>
+    <script type="text/ng-template" id="angular-1.5.8/b.html"> <div>dsfads</div>   </script>
+
+
+</div>
+</body>
+<script>
+    var app = angular.module("myApp", []);
+
+    app.service('providerServer01',function ($http) {
+        var _name='';
+        this.setName=function () {
+            _name=name
+        }
+        this.getName=function () {
+            return _name;
+        }
+        this.getData=function () {
+            var url ='https://angularjs.org/greet.php?callback=JSON_CALLBACK&name=Super%20Hero';
+            return $http.jsonp(url,{cache:true   });
+        }
+
+    })
+
+
+    app.controller("fistCtr", ['$scope','providerServer01','$filter','$location','$anchorScroll',
+        function fistCtr($scope,providerServer01,$filter,$location,$anchorScroll) {
+            $scope.name='张三';
+
+//        console.log('abs:'+$location.absUrl())
+//        console.log('hash:'+$location.hash('helow'))
+//        console.log('path:'+$location.hash('/new.html'))
+//        console.log('replce:'+$location.hash('/new.html').replace())
+            //    console.log('search:'+$location.search({'age':20}))
+            //   console.log('host:'+$location.host())
+
+            console.log('hash:'+$location.hash('div2'))
+            $scope.changeDiv=function (id) {
+                //alert(id)
+                console.log('hash:'+$location.hash(id))
+
+            }
+
+            var  data=   providerServer01.getData().success(function (data) {
+                console.log(data);
+                return data;
+            }).error(function () {
+                alert('false')
+            });
+            console.log(data)
+
+        }
+
+    ]);
+
+
+</script>
+
+</html>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f2e1477-7d7b-4a83-bb56-d43cdf5f7426" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ngRoute.html" afterPath="$PROJECT_DIR$/ngRoute.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ngResource.html" afterPath="$PROJECT_DIR$/ngResource.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,18 +20,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ngRoute.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngRoute.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="24" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="128" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ngRoute-ngAnimation-js.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ngRoute-ngAnimation-js.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,11 +70,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ngResource.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ngResource.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ngResource.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="135">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ngResource-2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ngResource-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zhangsan.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhangsan.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -98,18 +106,6 @@
             <state relative-caret-position="60">
               <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ngRoute-ngAnimation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngRoute-ngAnimation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="128" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="128" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -175,6 +171,8 @@
         <option value="$PROJECT_DIR$/ngRoute-ngAnimation-js.html" />
         <option value="$PROJECT_DIR$/list.json" />
         <option value="$PROJECT_DIR$/ngResource.html" />
+        <option value="$PROJECT_DIR$/zhangsan.json" />
+        <option value="$PROJECT_DIR$/ngResource-2.html" />
       </list>
     </option>
   </component>
@@ -315,12 +313,12 @@
       <workItem from="1487119611790" duration="6559000" />
       <workItem from="1487137170214" duration="375000" />
       <workItem from="1487137602352" duration="37527000" />
-      <workItem from="1487228770369" duration="9421000" />
+      <workItem from="1487228770369" duration="10961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53882000" />
+    <option name="totallyTimeSpent" value="55422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="78" width="1378" height="714" extended-state="0" />
@@ -355,22 +353,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/watch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bind.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-1.5.8/angular-1.3.0.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -726,8 +708,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ngResource.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        <state relative-caret-position="135">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhangsan.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngResource-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>

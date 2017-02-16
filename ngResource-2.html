@@ -23,7 +23,8 @@
 
     <div ng-controller="fistCtr" >
 
-{{data.age}}
+{{data}}
+        <div ng-repeat="message in data">{{message.age}}---{{message.name}}--{{message.job}}</div>
     </div>
 
 
@@ -36,13 +37,9 @@
         function fistCtr($scope,$resource) {
             var obj= $resource(':name.json');
            // var data=   obj.get();
-            var data=   obj.get({name:'list'},function (data) {
-                console.log(data)
-            },function (error) {
-
-            });
-            console.log(data)
+            var data=   obj.query({name:'zhangsan'});
             $scope.data=data;
+            console.log($scope.data)
 
         }
     ]);

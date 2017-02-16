@@ -23,19 +23,26 @@
 
     <div ng-controller="fistCtr" >
        <div ng-bind-html="text"></div>
+        <div ng-bind-html="detailContent()"></div>
     </div>
 
 
 </div>
 </body>
 <script>
-    var app = angular.module("myApp", ['ngSanitize']);
+    var app = angular.module("myApp", []);
 
-    app.controller("fistCtr", ['$scope',
-        function fistCtr($scope) {
-       $scope.a=5
-            $scope.text='<h2 class="red">{dfasdfa</h2>';
+    app.controller("fistCtr", ['$scope','$sce','$http',
+        function fistCtr($scope, $sce,$http){
 
+            $scope.text=$sce.trustAsHtml('<h2 class="red">dfasdfa</h2>');
+         var  url ='http://www.phonegap100.com/appapi.php?a=getPortalArticle&aid=338&callback=JSON_CALLBACK'
+                 $http.jsonp(url).success(function (data) {
+                     $scope.detailContent=function () {
+                        return $sce.trustAsHtml(data.result[0].content);
+                        // return data.result[0].content
+                     }
+                 });
 
         }
     ]);
